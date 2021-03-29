@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Pin List</h1>
+
+{% for pin in pins %}
+  <div class="card">
+    <a href="{% url 'detail' pin.id %}">
+    <div class="card-content">
+      <span class="card-title">{{ pin.brand }}</span>
+      <p>Description: {{ pin.description }}</p>
+       <p>Price: ${{ pin.price }}</p>
+    </div>
+    </a>
+  </div>
+{% endfor %}
+
+{% endblock %}

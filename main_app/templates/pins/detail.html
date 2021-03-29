@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Pin Details</h1>
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ pin.brand }}</span>
+    <p>Description: {{ pin.description }}</p>
+    <p>Price: ${{ pin.price }}</p>
+  </div>
+</div>
+
+{% endblock %}
