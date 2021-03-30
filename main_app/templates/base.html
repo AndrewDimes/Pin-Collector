@@ -12,14 +12,15 @@
 <body>
   <header class="navbar-fixed">
     <nav>
-      <div class="nav-wrapper">
+      <div class="nav-wrapper black">
         <ul>
           <li><a href="/" class="left brand-logo">&nbsp;&nbsp;PinCollector</a></li>
           
         </ul>
         <ul class="right">
-          <li><a href="/about">About</a></li>
-          <li><a href="/pins">View All My Pins</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'pins_create' %}">Add Pin</a></li>
+          <li><a href="{% url 'index' %}">View All My Pins</a></li>
         </ul>
       </div>
     </nav>
@@ -28,7 +29,7 @@
     {% block content %}
     {% endblock %}
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer black">
     <div class="right">All Rights Reserved, &copy; 2019 Pin Collector &nbsp;</div>
   </footer>
 </body>

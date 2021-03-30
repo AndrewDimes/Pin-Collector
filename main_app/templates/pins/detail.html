@@ -9,6 +9,10 @@
     <p>Description: {{ pin.description }}</p>
     <p>Price: ${{ pin.price }}</p>
   </div>
+    <div class="card-action">
+    <a href="{% url 'pins_update' pin.id %}">Edit</a>
+    <a href="{% url 'pins_delete' pin.id %}">Delete</a>
+  </div>
 </div>
 
 {% endblock %}
