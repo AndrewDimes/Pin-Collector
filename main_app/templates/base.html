@@ -8,6 +8,7 @@
   <title>Pin Collector</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
   <header class="navbar-fixed">
@@ -19,6 +20,8 @@
         </ul>
         <ul class="right">
           <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'categories_create' %}">Add a Category</a></li>
+          <li><a href="{% url 'categories_index' %}">View All Categories</a></li>
           <li><a href="{% url 'pins_create' %}">Add Pin</a></li>
           <li><a href="{% url 'index' %}">View All My Pins</a></li>
         </ul>
